@@ -1,0 +1,219 @@
+body {
+    margin: 0;
+    font-family: 'Montserrat', 'Segoe UI', Arial, sans-serif;
+    background: #18181b;
+    color: #fff;
+    min-height: 100vh;
+    padding-top: 80px; /* igual o mayor que la altura del header */
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+    background: linear-gradient(135deg, #e6e9b2 0%, #6ca6a8 40%, #1f565b 100%);
+    min-height: 1px;
+    height: 80px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    z-index: 1000;
+    border-bottom: 5px solid #18181b;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: bold;
+    font-size: 1.3em;
+    letter-spacing: 1px;
+    color: #fff;
+}
+
+@font-face {
+    font-family: 'TheBeast';
+    src: url('TheBeast.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.logo span {
+    font-family: 'TheBeast', sans-serif !important;
+    color: #111 !important;
+    font-size: 2em;
+    letter-spacing: 0.1em;
+    position: relative;
+    top: 10px;
+}
+
+.logo img {
+    height: 70px;
+    box-sizing: border-box;
+}
+
+nav a {
+    margin-left: 28px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    transition: color 0.2s;
+    border-bottom: 2px solid transparent;
+    padding-bottom: 2px;
+}
+nav a:hover,
+nav a:focus {
+    color: #232526;
+    border-bottom: 2px solid #fff;
+}
+
+.hero {
+    text-align: center;
+    padding: 18px 0 10px 0;
+    background: #18181b;
+}
+.hero h1 {
+    font-size: 2.2em;
+    font-weight: 900;
+    letter-spacing: 2px;
+    color: #18181b;
+    margin: 0;
+    color: #fff;
+}
+.hero p {
+    font-size: 1em;
+    color: #bdbdbd;
+    margin-top: 6px;
+}
+
+.livery-list {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    margin: 0 auto;
+    max-width: 1600px;
+}
+
+.livery-row {
+    display: flex;
+    width: 100%;
+    min-height: 320px;
+    background: #18181b;
+    border-bottom: 2px solid #232326;
+}
+
+.livery-img-col {
+    position: relative;
+    flex: 1 1 50%;
+    display: flex;
+    align-items: stretch;
+    justify-content: flex-end;
+    background: #222;
+    /* ...existing code... */
+}
+
+.livery-img-col img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    max-height: 340px;
+    display: block;
+}
+
+.sticker-new {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: #1f565b;
+    color: #fff;
+    font-size: 1em;
+    font-weight: bold;
+    padding: 4px 16px;
+    border-radius: 16px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.18);
+    letter-spacing: 0.15em;
+    z-index: 2;
+    pointer-events: none;
+}
+
+.sticker-nuevo {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: #ad2422;
+    color: #fff;
+    font-size: 1em;
+    font-weight: bold;
+    padding: 7px 22px 7px 22px;
+    border-radius: 0;
+    box-shadow: none;
+    letter-spacing: 0.15em;
+    z-index: 2;
+    pointer-events: none;
+    text-transform: uppercase;
+}
+
+.livery-info-col {
+    flex: 1 1 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #18181b;
+    color: #fff;
+    text-align: center;
+    padding: 0 40px;
+}
+
+.livery-info-col h2 {
+    font-size: 2.2em;
+    font-weight: 800;
+    margin: 0 0 10px 0;
+    color: #fff;
+    letter-spacing: 1px;
+}
+
+.package-label {
+    display: block;
+    font-size: 1.1em;
+    color: #bdbdbd;
+    font-style: italic;
+    margin-bottom: 32px;
+    margin-top: 0;
+    letter-spacing: 1px;
+}
+
+.download-btn {
+    display: inline-block;
+    background: transparent;
+    color: #fff;
+    border: 2px solid #fff;
+    padding: 14px 48px;
+    border-radius: 0;
+    font-size: 1.2em;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-decoration: none;
+    transition: background 0.2s, color 0.2s, border 0.2s;
+    margin-top: 18px;
+}
+.download-btn:hover, .download-btn:focus {
+    background:#6ca6a8;
+    color: #181818;
+    border-color: #6ca6a8;
+}
+
+footer {
+    text-align: center;
+    padding: 1px 0 1px 0;
+    color: #181818;
+    font-size: 1.1em;
+    background: #fff;
+    letter-spacing: 2px;
+    opacity: 0.7;
+    border-top: 5px solid #181818;
+}
