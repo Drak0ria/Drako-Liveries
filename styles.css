@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;1,400&display=swap');
+
 body {
     margin: 0;
     font-family: 'Montserrat', 'Segoe UI', Arial, sans-serif;
@@ -36,7 +38,7 @@ header {
 
 @font-face {
     font-family: 'TheBeast';
-    src: url('TheBeast.otf') format('opentype');
+    src: url('Fonts/TheBeast.otf') format('opentype');
     font-weight: normal;
     font-style: normal;
 }
@@ -84,10 +86,13 @@ nav a:focus {
     color: #fff;
 }
 .hero p {
-    font-size: 1em;
-    color: #bdbdbd;
+    font-family: 'Inter', sans-serif;
+    font-style: italic;    
+    font-size: 1.1em;
+    color: #a0a0a0;
     margin-top: 6px;
 }
+
 
 .livery-list {
     width: 100%;
@@ -178,14 +183,16 @@ nav a:focus {
 }
 
 .package-label {
+    font-family: 'Inter', sans-serif;
+    font-style: italic;
     display: block;
     font-size: 1.1em;
-    color: #bdbdbd;
-    font-style: italic;
+    color: #a0a0a0;
     margin-bottom: 32px;
     margin-top: 0;
     letter-spacing: 1px;
 }
+
 
 .download-btn {
     display: inline-block;
@@ -217,3 +224,5 @@ footer {
     opacity: 0.7;
     border-top: 5px solid #181818;
 }
+
+
