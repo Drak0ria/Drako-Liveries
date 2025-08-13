@@ -10,21 +10,60 @@ body {
 }
 
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 40px;
-    background: linear-gradient(135deg, #e6e9b2 0%, #6ca6a8 40%, #1f565b 100%);
-    min-height: 1px;
-    height: 80px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    z-index: 1000;
-    border-bottom: 5px solid #18181b;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  height: 80px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(24, 24, 27, 0.8);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  z-index: 1000;
+  box-sizing: border-box;
 }
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  max-width: 600px; /* Limita el ancho total del grupo */
+}
+
+.main-nav a,
+.language-switcher a {
+  padding: 8px 14px;
+  font-weight: 500;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+  white-space: nowrap;
+}
+
+.main-nav a {
+  color: #6ca6a8;
+}
+
+.main-nav a:hover {
+  background-color: #6ca6a8;
+  color: #18181b;
+}
+
+.language-switcher a {
+  color: #aaa;
+  border: 1px solid #aaa;
+}
+
+.language-switcher a:hover {
+  background-color: #6ca6a8;
+  color: #18181b;
+  border-color: #6ca6a8;
+}
+
 
 @font-face {
     font-family: 'TheBeast';
@@ -45,7 +84,7 @@ header {
     background-color: #18181b;
     padding: 40px 20px;
     text-align: center;
-    font-family: 'Montserrat', 'Segoe UI', Arial, sans-serif;
+    font-family: 'Inter', sans-serif;
 }
 
 .contact-section h2 {
@@ -55,7 +94,7 @@ header {
 }
 
 .contact-section p {
-    font-size: 16px;
+    font-size: 15px;
     margin-bottom: 30px;
     color: #a0a0a0;
 }
@@ -66,7 +105,7 @@ header {
     display: flex;
     flex-direction: column;
     gap: 15px;
-    font-family: 'Montserrat', 'Segoe UI', Arial, sans-serif;
+    font-family: 'Inter', sans-serif;
 }
 
 .contact-form input,
@@ -74,20 +113,21 @@ header {
     padding: 12px;
     border: 1px solid #ccc;
     border-radius: 6px;
-    font-size: 14px;
-    font-family: 'Montserrat', 'Segoe UI', Arial, sans-serif;
+    font-size: 15px;
+    font-family: 'Inter', sans-serif;
 }
 
 .contact-form button {
     padding: 12px;
     background-color: #6ca6a8;
     color: #000;
+    font-size: 15px;
     border: none;
     border-radius: 6px;
     font-weight: bold;
     cursor: pointer;
     transition: background-color 0.3s ease;
-    font-family: 'Montserrat', 'Segoe UI', Arial, sans-serif;
+    font-family: 'Inter', sans-serif;
 }
 
 .contact-form button:hover {
@@ -107,9 +147,9 @@ header {
 
 .logo span {
     font-family: 'TheBeast', sans-serif !important;
-    color: #111 !important;
+    color: #ccc !important;
     font-size: 2em;
-    letter-spacing: 0.1em;
+    letter-spacing: 0.15em;
     position: relative;
     top: 10px;
 }
@@ -119,25 +159,12 @@ header {
     box-sizing: border-box;
 }
 
-nav a {
-    margin-left: 28px;
-    text-decoration: none;
-    color: #fff;
-    font-weight: 500;
-    transition: color 0.2s;
-    border-bottom: 2px solid transparent;
-    padding-bottom: 2px;
-}
-nav a:hover,
-nav a:focus {
-    color: #232526;
-    border-bottom: 2px solid #fff;
-}
 
 .hero {
     text-align: center;
     padding: 18px 0 10px 0;
-    background: #18181b;
+    background: #6ca6a8;
+    border-bottom: 5px solid #18181b;
 }
 .hero h1 {
     font-size: 2.2em;
@@ -145,13 +172,14 @@ nav a:focus {
     letter-spacing: 2px;
     color: #18181b;
     margin: 0;
-    color: #fff;
+    color: #18181b;
 }
 .hero p {
     font-family: 'Inter', sans-serif;
-    font-style: italic;    
+    font-style: italic;
+    font-weight: bold;
     font-size: 1.1em;
-    color: #a0a0a0;
+    color: #18181b;
     margin-top: 6px;
 }
 
@@ -285,6 +313,7 @@ footer {
     letter-spacing: 2px;
     opacity: 0.7;
     border-top: 5px solid #181818;
+    font-family: 'Inter', sans-serif;
 }
 
 
